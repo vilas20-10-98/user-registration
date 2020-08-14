@@ -12,3 +12,14 @@ else
 
 fi
 
+read -p "Ente the last name: " Last name
+if [[ $Lastname =~ $pattern ]]
+then
+    echo $Lastname;
+else
+   echo "The letter should be in capital";
+   exit
+
+fi
+
+
