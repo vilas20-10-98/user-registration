@@ -1,9 +1,9 @@
 #!/bin/bash -x
 
 read -p "Enter an password: " password
-pattern5="^([[(#password} -ge 8]])$"
+pattern6="^(*password* == *[[:upper:]]*]{1})$"
 
-if [[ $pattern5 =~ $password ]]
+if [[ $pattern6 =~ $password ]]
 then
   echo "valid password";
 else
