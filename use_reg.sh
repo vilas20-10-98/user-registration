@@ -21,5 +21,14 @@ else
    exit
 
 fi
+read -p "Enter your email id: " emialid
+pattern1="^([a-z0-9\_\.\-\,]+)@([a-z]+)\.([a-z]{2,5}\.([a-z]{3,5})$"
 
+if [[ $emailid =~ $pattern1 ]]
+then
+  echo $emailid;
+else
+  echo "pay attention special charecter in email";
+    exit
+fi
 
