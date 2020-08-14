@@ -32,3 +32,14 @@ else
     exit
 fi
 
+read -p "Enter mobile number: " number
+pattern2="^([1-9]{2}[ ][0-9]{10})$"
+if [[ $pattern =~ $number ]]
+then
+   echo $number;
+else
+   echo "mobile number should be ten digit pre-defined number"
+   exit
+fi
+
+
