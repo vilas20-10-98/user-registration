@@ -34,7 +34,7 @@ fi
 
 read -p "Enter mobile number: " number
 pattern2="^([1-9]{2}[ ][0-9]{10})$"
-if [[ $pattern =~ $number ]]
+if [[ $pattern2 =~ $number ]]
 then
    echo $number;
 else
@@ -42,4 +42,13 @@ else
    exit
 fi
 
+read -p "Enter an password: " password
+pattern5="^([[(#password} -ge 8]])$"
+
+if [[ $pattern5 =~ $password ]]
+then
+  echo "valid password";
+else
+  echo "invalid password";
+fi
 
